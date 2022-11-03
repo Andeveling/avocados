@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next"
-import DB from "@database"
+import DB from "@/database/db"
 
 const oneAvos = async (req: NextApiRequest, res: NextApiResponse) => {
   try {

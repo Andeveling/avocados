@@ -1,5 +1,5 @@
 import { NextApiHandler } from "next"
-import DB from "@database"
+import DB from "@/database/db"
 
 const allAvos: NextApiHandler = async (_req, res) => {
   try {
