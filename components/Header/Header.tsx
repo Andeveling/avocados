@@ -14,7 +14,7 @@ const Header = () => {
   const toggleVisible = () => setVisible((prevVisible) => !prevVisible)
 
   useEffect(() => {
-    window.setTimeout(toggleVisible, 1)
+    window.setTimeout(toggleVisible, 500)
   }, [])
 
   useEffect(() => {

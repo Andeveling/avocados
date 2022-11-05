@@ -8,7 +8,7 @@ type AddToCartProps = {
 
 const addToCartRequest = () =>
   new Promise((resolve, reject) => {
-    window.setTimeout(resolve, 1)
+    window.setTimeout(resolve, 600)
   })
 
 const validate = (quantity: number) => {
@@ -27,7 +27,7 @@ const AddToCart = ({ product }: AddToCartProps) => {
   const toggleMessage = () => {
     setTimeout(() => {
       setVisible(false)
-    }, 1)
+    }, 500)
   }
 
   const handleSubmit = async () => {

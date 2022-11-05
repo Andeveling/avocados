@@ -16,9 +16,7 @@ class Database {
     if (!Object.prototype.hasOwnProperty.call(allData, id)) {
       return null
     }
-
     const entry = allData[id]
-    await randomDelay()
     return entry
   }
 }

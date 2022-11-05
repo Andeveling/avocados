@@ -17,8 +17,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 // This also gets called at build time
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   // params contains the post `id`.
+  const { params } = context
   // If the route is like /posts/1, then params.id is 1
   const response = await axios.get<TProduct>(`http://localhost:3000/api/avos/${params?.id}`)
   const product = response.data
